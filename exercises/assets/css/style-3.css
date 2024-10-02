@@ -35,4 +35,25 @@ p {
     margin-bottom: 16px
 }
 
+.section-1{
+    background-color: aqua;
+    color:darkgreen;
+}
+.section-2{
+    background-color: chartreuse;
+    color: blueviolet;
+}
+.section-3{
+    background-color:coral;
+    color:darkblue;
+}
+.section-4{
+    background-color:darkorchid;
+    color: lightsteelblue;
+}
+.section-5{
+    background-color:darkorange;
+    color: blueviolet;
+}
+
 section *:last-child { margin-bottom: 0 !important }

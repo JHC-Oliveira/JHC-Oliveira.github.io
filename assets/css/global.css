@@ -20,6 +20,13 @@ input, button, textarea, select { font: inherit }
  }
 
 /* ================= ENDS ================ */
+body { background-color: #364461 }  
+h1, h2{color: #e3ba6a}
+h3{color:darkgoldenrod}
+p{color: #bfa374}
+a{  
+    text-decoration: none;
+    color:#ffffff}
 
 body {
     text-align: center;

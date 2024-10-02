@@ -20,6 +20,8 @@ input, button, textarea, select { font: inherit }
     body { padding: 8% 5% }
  }
 
+ body { background-color: #fef1ef }
+ h1, h2, h3, p { color: #1e266d }
 
 h1 {
     font-size: 84px;
