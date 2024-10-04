@@ -34,7 +34,6 @@ p {
     font-size: 20px;
     margin-bottom: 16px
 }
-
 .section-1{
     background-color: aqua;
     color:darkgreen;
@@ -49,11 +48,30 @@ p {
 }
 .section-4{
     background-color:darkorchid;
-    color: lightsteelblue;
+    color:aliceblue;
 }
 .section-5{
     background-color:darkorange;
     color: blueviolet;
 }
+.section-6{
+    background-color:darkolivegreen;
+    color:blanchedalmond;
+}
+body{
+    background-color: darkolivegreen;
+}
+@media (min-width: 768px) {
+    a { padding: 4% 20% }
+ }
+ 
+ /* Mobiles */
+ @media (max-width: 767px) {
+    a { padding: 8% 5% }
+ }
 
+a{
+    color:white;
+    
+}
 section *:last-child { margin-bottom: 0 !important }
