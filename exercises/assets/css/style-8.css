@@ -4,77 +4,47 @@
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
 body { line-height: 1.5; min-height: 100vh }
-@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
-@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 
-/* Desktops */
-@media (min-width: 768px) {
-    body { padding: 4% 20% }
- }
- 
- /* Mobiles */
- @media (max-width: 767px) {
-    body { padding: 8% 5% }
- }
+/* ============ CUSTOM PROPERTIES ============  */
 
- /*============================== IMAGE INDEX ======================= */
- .LogoHome{
-    display: flex;
-    flex-direction: row;
+div{
+    padding: 12px;
+    margin-bottom: 40px;
+    width: 25%
+}
+.bono {
+    background-color: #4081ec;
+
 }
 
-.indexImg{
-    width: 60%;
-    height: 60%;
+.edge {
+    background-color: #ffbb33;
+
 }
 
-/* ================= ENDS ================ */
-body { background-color: #364461 }  
-h1, h2{color: #e3ba6a}
-h3{color:var(--orange-600)}
-p{color: #bfa374}
-a{  
-    text-decoration: none;
-    color:#ffffff;
-    display: inline-block;
-}
-a:hover{
-    transform: scale(1.3);
-}
-body {
-    text-align: center;
-    font-family: sans-serif;
+.adam {
+    background-color: #f73345;
+
 }
 
-h1 {
-    font-size: 78px;
-    font-weight: normal;
-    letter-spacing: -2px;
-    margin-bottom: 12px;
-    line-height: 1.2;
+.larry {
+    background-color: #e0e0e0;
+
 }
 
-h2 {
-    font-size: 42px;
-    letter-spacing: 6px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
+.bono h3,
+.bono p,
+.adam h3,
+.adam p { color: #fff }
 
-h3 {
-    font-size: 24px;
-    margin-top: 48px;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 20px;
-    margin-bottom: 16px;
-}
+.edge h3,
+.edge p,
+.larry h3,
+.larry p { color: #000 }
 
 :root {
  
@@ -292,4 +262,38 @@ p {
     --trend-700: #2c4763;
     --trend-800: #1f364d;
     --trend-900: #0e2439;
+}
+
+/* ================= ENDS ================ */
+
+
+/* SECTIONS */
+
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 14% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 12% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+/* ==== Headings ==== */
+
+h1 {
+	font-family: sans-serif;
+	font-size: 64px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 64px;
+}
+
+h3 {
+	font-family: sans-serif;
+	font-size: 28px;
+    margin-bottom: 2px;
+}
+
+/* Paragraphs of text */
+p {
+	font-family: sans-serif;
+    font-size: 20px;
+    color: #696969;
+    line-height: 1.7
 }
