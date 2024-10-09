@@ -19,6 +19,17 @@ input, button, textarea, select { font: inherit }
     body { padding: 8% 5% }
  }
 
+ /*============================== IMAGE INDEX ======================= */
+ .LogoHome{
+    display: flex;
+    flex-direction: row;
+}
+
+.indexImg{
+    width: 60%;
+    height: 60%;
+}
+
 /* ================= ENDS ================ */
 body { background-color: #364461 }  
 h1, h2{color: #e3ba6a}
@@ -48,7 +59,7 @@ h1 {
 h2 {
     font-size: 42px;
     letter-spacing: 6px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     line-height: 1.2;
 }
 
