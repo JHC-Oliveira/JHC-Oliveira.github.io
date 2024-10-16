@@ -236,9 +236,9 @@ img {
 /* ================= ENDS ================ */
 
 /* Web page */
-body { 
-    font-family: serif;
-}
+body{
+    font-family: var(--font-sans)   
+ }
 
 /* HEADER */
 header { 

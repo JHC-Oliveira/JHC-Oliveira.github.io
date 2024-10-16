@@ -11,6 +11,10 @@ input, button, textarea, select { font: inherit }
 
 /* ============ CUSTOM PROPERTIES ============  */
 
+body{
+    font-family: var(--font-sans)   
+ }
+ 
 div{
     padding: 12px;
     margin-bottom: 40px;

@@ -11,6 +11,10 @@ input, button, textarea, select { font: inherit }
 
 /* ============ CUSTOM PROPERTIES ============  */
 
+body{
+    font-family: var(--font-sans)   
+ }
+ 
 img {
     margin-bottom: 32px;
     border-radius: 12px;
