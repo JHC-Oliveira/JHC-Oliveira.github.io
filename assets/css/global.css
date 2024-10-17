@@ -18,17 +18,27 @@ input, button, textarea, select { font: inherit }
  @media (max-width: 767px) {
     body { padding: 8% 5% }
  }
+ 
 
  /*============================== IMAGE INDEX ======================= */
- .LogoHome{
-    display: flex;
-    flex-direction: row;
+
+ @media (max-width: 1280px) {
+    .LogoHome {
+        flex-direction: column;
+    }
+    
+}
+@media (min-width: 1281px) {
+    .LogoHome{
+        display: flex;
+        flex-direction: row;
+    }
+    .indexImg{
+        width: 60%;
+        height: 60%;
+    }
 }
 
-.indexImg{
-    width: 60%;
-    height: 60%;
-}
 
 /* ================= ENDS ================ */
 body { background-color: #364461 }  
