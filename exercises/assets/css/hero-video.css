@@ -1,17 +1,81 @@
 /*  ============= WEB BROWSER RESETS ============ */
-* { margin: 0; padding: 0; border: none }
-*, *::before, *::after { box-sizing: border-box }
-html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
-scroll-behavior: smooth; scroll-padding-top: 20px }
-body { line-height: 1.5; min-height: 100vh; 
-margin-left: auto; margin-right: auto; min-height: 100vh }  
-@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
-@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
-nav, header, section, footer { width: 100% }
-nav *:last-child, header *:last-child, section *:last-child, footer *:last-child { margin-bottom: 0 }
-img { width: 100%; height: auto; display: block }
-input, button, textarea, select { font: inherit }
-h1, h2, h3, h4, p, li { word-break: break-word; hyphens: auto }
+* {
+    margin: 0;
+    padding: 0;
+    border: none
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh
+}
+
+@media (max-width: 767px) {
+    body {
+        text-rendering: optimizeSpeed
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        text-rendering: optimizeLegibility
+    }
+}
+
+nav,
+header,
+section,
+footer {
+    width: 100%
+}
+
+nav *:last-child,
+header *:last-child,
+section *:last-child,
+footer *:last-child {
+    margin-bottom: 0
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+    word-break: break-word;
+    hyphens: auto
+}
 
 /* ============ CUSTOM PROPERTIES ============  */
 
@@ -234,7 +298,7 @@ h1, h2, h3, h4, p, li { word-break: break-word; hyphens: auto }
     --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
     --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
     --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    
+
     --global-font: var(--font-sans);
 
     /* ==== Fluid font sizes ==== */
@@ -249,7 +313,9 @@ h1, h2, h3, h4, p, li { word-break: break-word; hyphens: auto }
 }
 
 /* Global font */
-body { font-family: var(--global-font); }
+body {
+    font-family: var(--global-font);
+}
 
 
 /* ============= CSS FOR HERO BLOCK ============= */
@@ -266,24 +332,29 @@ header {
     /* Background colour */
     background-color: gray;
 
-    background-image: linear-gradient(90deg,#d38312,#a83279);
+    background-image: linear-gradient(90deg, #d38312, #a83279);
 
     position: relative;
 
 }
 
 /* Set minimum height of hero block */
-@media (min-width: 768px) { 
-    header { min-height: 80vh } 
-}
-@media (max-width: 767px) { 
-    header { min-height: 500px } 
+@media (min-width: 768px) {
+    header {
+        min-height: 80vh
+    }
 }
 
-.hero-text-container h1, 
+@media (max-width: 767px) {
+    header {
+        min-height: 500px
+    }
+}
+
+.hero-text-container h1,
 .hero-text-container h2 {
     line-height: 1.2;
-    color:#fff;
+    color: #fff;
     text-shadow: 2px 2px #222;
 }
 
@@ -305,31 +376,40 @@ header {
 }
 
 .hero-text-container {
-    position: relative; 
+    position: relative;
     z-index: 2;
-}    
-    
+}
+
 .hero-bg-media {
-    position: absolute; 
-    top: 0; right: 0; bottom: 0; left: 0; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 0;
 }
-                    
+
 .hero-bg-media * {
-    object-fit: cover; width: 100%; height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .bg-overlay {
-    position: absolute; 
-    top: 0; right: 0; bottom: 0; left: 0;  
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1;
-    background-image: linear-gradient(rgba(29,38,113,0.7),rgba(195,55,100,0.3));;   
- }
+    background-image: linear-gradient(rgba(29, 38, 113, 0.7), rgba(195, 55, 100, 0.3));
+    ;
+}
 
 
 
 .slide-in-top {
-	animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /**
@@ -339,17 +419,18 @@ header {
  */
 @keyframes slide-in-top {
     0% {
-      transform: translateY(-1000px);
-      opacity: 0;
+        transform: translateY(-1000px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 .slide-in-left {
-	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -360,22 +441,22 @@ header {
  */
 @keyframes slide-in-left {
     0% {
-      transform: translateX(-1000px);
-      opacity: 0;
+        transform: translateX(-1000px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
-.back{
+.back {
     display: flex;
     justify-content: center;
-    
+
 }
-  
-  
+
+
 
 /* ======== END CSS FOR HERO BLOCK ======== */
-
