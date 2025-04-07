@@ -1,0 +1,30 @@
+
+nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: var(--purple-800)  }
+
+header.theme-dark   { background-color: var(--purple-900) }
+
+header.theme-dark  h1 { color: var(--sky-400); }
+
+section.theme-dark   { background-color: var(--purple-700)  }
+
+footer.theme-dark   { background-color: var(--purple-900) }
+
+
+
+header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+
+nav{
+    img{
+        
+        box-shadow: -6px 6px 6px violet;
+        border-radius: 10px;
+    }
+}
+
+.badge{
+    border-radius: 7px;
+    font-size: xx-large;
+}
+.col-2 .col-text h1{
+    color: violet;
+}
