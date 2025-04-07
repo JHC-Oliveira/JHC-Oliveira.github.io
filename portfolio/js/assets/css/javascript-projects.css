@@ -7,7 +7,7 @@
 .container-menu a#btn-cta:visited { color: var(--white-000); font-weight: 600 }
 .container-menu .item-icon .bar1,.container-menu .item-icon .bar2,.container-menu .item-icon .bar3 { background-color: var(--white-000) }
 .container-menu a#btn-cta:link,
-.container-menu a#btn-cta:visited { background-color: var(--blue-500) }
+.container-menu a#btn-cta:visited { background-color: var(--blue-600) }
 .container-menu a#btn-cta:focus,
 .container-menu a#btn-cta:hover,
 .container-menu a#btn-cta:active { background-color: var(--blue-400) }
